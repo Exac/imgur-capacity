@@ -46,13 +46,21 @@ SOFTWARE.
 
     //check if on "i" subdomain already
     var i_subdomain = (location[0].indexOf("i.") > -1);
+    
+    //check if loading html or just the image, only load the image
+    var image_only = (location[1].indexOf(".")> -1);
 
     var new_location = "http";
     if (!i_subdomain) {
         if (https) {
             new_location += "s";
         }
+        
         new_location += "://i.imgur.com" + location[1];
+        
+        if(!image_only) {
+            new_location += ".png";
+        }
 
         window.location = new_location;
     }

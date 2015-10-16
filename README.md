@@ -12,4 +12,4 @@ On iOs, you should be able to create a bookmark with the following contents (unt
   	javascript:!function(){"use strict";var i=(window.location+"").split("imgur.com"),t=i[0].indexOf("https")>-1,o=i[0].indexOf("i.")>-1,n="http";o||(t&&(n+="s"),n+="://i.imgur.com"+i[1],window.location=n)}();
   	kappa();
 
-add the <pre>plugin.js</pre> file to your browser-extension and you should be good to go!
+add the plugin.js file to your browser-extension and you should be good to go!
